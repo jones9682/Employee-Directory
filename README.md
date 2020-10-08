@@ -24,7 +24,7 @@ An employee or manager would benefit greatly from being able to view non-sensiti
 
 ## Deployment App Link
 
-- [Deployment App Link](https://github.com/jones9682/Employee-Directory)
+- [Deployment App Link](https://jones9682.github.io/Employee-Directory/?)
 
 ## Screen Capture
 
