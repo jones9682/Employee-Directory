@@ -12,19 +12,21 @@ function TableBody({ employees }) {
         return formattedDate;
     }
     return (
-        <div>
-            {employees.map(emp => (
-                <tr>
-                    <td> <img src={emp.picture.medium} alt="employeePhoto"></img></td>
-                    <th>{emp.name.first}</th>
-                    <th>{emp.name.last}</th>
-                    <td>{emp.phone}</td>
-                    <td>{emp.email}</td>
-                    <td>{formatDate(emp.dob.date)}</td>
-                </tr>
-            ))
-            }
-        </div>
+        <table className="table table-striped">
+            <thead>
+                {employees.map(emp => (
+                    <tr>
+                        <td> <img src={emp.picture.medium} alt="employeePhoto"></img></td>
+                        <th>{emp.name.first}</th>
+                        <th>{emp.name.last}</th>
+                        <td>{emp.phone}</td>
+                        <td>{emp.email}</td>
+                        <td>{formatDate(emp.dob.date)}</td>
+                    </tr>
+                ))
+                }
+            </thead>
+        </table>
     )
 }
 
