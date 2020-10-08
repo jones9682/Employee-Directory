@@ -3,7 +3,7 @@ import React from "react";
 function Headings() {
     return (
         <thead>
-            <tr>
+            <tr className="table table-striped">
                 <th >IMAGE</th>
                 <th >FIRST-NAME</th>
                 <th >LAST-NAME</th>
