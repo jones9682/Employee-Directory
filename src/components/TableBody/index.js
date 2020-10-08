@@ -16,12 +16,13 @@ function TableBody({ employees }) {
             <thead>
                 {employees.map(emp => (
                     <tr>
-                        <td> <img src={emp.picture.medium} alt="employeePhoto"></img></td>
-                        <th>{emp.name.first}</th>
-                        <th>{emp.name.last}</th>
-                        <td>{emp.phone}</td>
-                        <td>{emp.email}</td>
-                        <td>{formatDate(emp.dob.date)}</td>
+                        <td className="align-middle"> <img src={emp.picture.medium} alt="employeePhoto"></img></td>
+                        <th className="align-middle">{emp.name.first}</th>
+                        <th className="align-middle">{emp.name.last}</th>
+                        <td className="align-middle">{emp.phone}</td>
+                        <td className="align-middle">{emp.email}</td>
+                        <td className="align-middle">{formatDate(emp.dob.date)}</td>
+                        <td></td>
                     </tr>
                 ))
                 }
